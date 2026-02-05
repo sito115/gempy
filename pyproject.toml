@@ -1,0 +1,26 @@
+[project]
+name = "gempy"
+version = "2025.2.1a1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gempy-engine>=2025.2.0",
+    "gempy-viewer>=2025.1.6",
+    "pandas>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pyvista>=0.46.5",
+    "subsurface-terra>=2026.1.0",
+    "torch>=2.10.0",
+    "wellpathpy>=0.5.2",
+]
+optional = ["gempy-plugins", "pooch>=1.9.0", "scikit-image>=0.26.0"]
+
+[tool.setuptools]
+# This tells setuptools to look for the 'gempy' folder in the current directory
+packages = ["gempy"]
+package-dir = { "" = "src" }
