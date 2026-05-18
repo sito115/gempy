@@ -1,9 +1,14 @@
 import enum
 import os
+import matplotlib
+matplotlib.use('Agg')
+import pyvista
+pyvista.OFF_SCREEN = True
 
 input_path = os.path.dirname(__file__) + '/input_data'
 input_path2 = os.path.dirname(__file__) + '/../examples/data/input_data/'
 import numpy as np
+
 
 np.random.seed(1234)
 

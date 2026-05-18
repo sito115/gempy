@@ -490,7 +490,7 @@ def _generate_greenstone_model(compute_model: bool) -> gp.data.GeoModel:
     test_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Build the path relative to the test file location
-    path = os.path.join(test_dir, '..', '..', 'examples', 'data', 'gempy_models', 'Greenstone.gempy')
+    path = os.path.join(test_dir, '..', '..', '..', 'examples', 'data', 'gempy_models', 'Greenstone.gempy')
     with open(path, 'rb') as f:
         binary_file = f.read()
 
@@ -511,7 +511,7 @@ def _generate_greenstone_model(compute_model: bool) -> gp.data.GeoModel:
 def _generate_fault_relation_model(compute_model: bool) -> gp.data.GeoModel:
     # Path to input data
     test_dir = os.path.dirname(os.path.abspath(__file__))
-    data_path = os.path.join(test_dir, '..', '..', 'examples', 'data', 'input_data', 'tests')
+    data_path = os.path.join(test_dir, '..', '..', '..','examples', 'data', 'input_data', 'tests')
     # data_path = os.path.join(test_dir, "..\\..\\examples\\data\\input_data\\tests\\")
 
     # Create instance of new geomodel
